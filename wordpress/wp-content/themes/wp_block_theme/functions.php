@@ -1,9 +1,11 @@
 <?php
-// Tajwar - Guten Tag Theme
+
+// Myridia Wp Block Theme
 
 // Enqueue theme styles
-function gt_enqueue_assets() {
-    wp_enqueue_style('gt-style', get_stylesheet_uri(), array(), time()); // Cache busting with time()
+function gt_enqueue_assets()
+{
+    wp_enqueue_style('gt-style', get_stylesheet_uri(), [], time()); // Cache busting with time()
 }
 add_action('wp_enqueue_scripts', 'gt_enqueue_assets');
 
@@ -16,27 +18,26 @@ add_theme_support('responsive-embeds');   // Responsive embeds
 add_theme_support('title-tag');           // Dynamic titles
 
 // Optional: Custom color palette
-add_theme_support('editor-color-palette', array(
-    array(
+add_theme_support('editor-color-palette', [
+    [
         'name' => 'Primary',
         'slug' => 'primary',
         'color' => '#0073aa',
-    ),
-    array(
+    ],
+    [
         'name' => 'Secondary',
         'slug' => 'secondary',
         'color' => '#222222',
-    ),
-    array(
+    ],
+    [
         'name' => 'Accent',
         'slug' => 'accent',
         'color' => '#f39c12',
-    ),
-));
-add_theme_support('custom-logo', array(
-    'height'      => 60,
-    'width'       => 200,
+    ],
+]);
+add_theme_support('custom-logo', [
+    'height' => 60,
+    'width' => 200,
     'flex-height' => true,
-    'flex-width'  => true,
-));
-?>
+    'flex-width' => true,
+]);
