@@ -1,0 +1,87 @@
+/*
+Theme Name: Guten Tag
+Theme URI: https://example.com
+Author: Tajwar
+Author URI: https://example.com
+Description: A Gutenberg block-ready starter theme with FSE support and responsive design.
+Version: 1.0
+License: GNU General Public License v2 or later
+Text Domain: guten-tag
+Tag: UpdateTheme
+*/
+/* Header Layout */
+.site-header {
+  background: #f5f5f5;
+  padding: 20px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0073aa;
+  text-decoration: none;
+}
+
+.main-navigation {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.main-navigation ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-navigation li {
+  margin-right: 20px;
+}
+
+.main-navigation a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+}
+
+.header-cta .cta-button {
+  background-color: #0073aa;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.header-cta .cta-button:hover {
+  background-color: #005f8d;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main-navigation ul {
+    flex-direction: column;
+  }
+
+  .main-navigation li {
+    margin: 10px 0;
+  }
+
+  .header-cta {
+    margin-top: 10px;
+  }
+}
