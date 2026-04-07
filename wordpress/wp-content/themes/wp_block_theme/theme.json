@@ -1,6 +1,12 @@
 {
   "$schema": "https://schemas.wp.org/trunk/theme.json",
-  "version": 3,
+    "version": 3,
+    "templateParts": [{
+        "name":"header",
+	"title": "MyHeader",
+	"area": "header",
+	"description":"Main Header"
+    }] 
   "settings": {
     "color": {
       "palette": [
@@ -22,7 +28,7 @@
     }
   },
   "styles": {
-    "elements": {
+      "elements": {
       "h1": {
         "typography": { "fontSize": "32px" },
         "color": { "text": "#0073aa" }
@@ -42,3 +48,6 @@
     }
   }
 }
+
+
+

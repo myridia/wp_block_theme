@@ -20,7 +20,7 @@ ask() {
   echo -e "13\t Activate Plugis woo,alma,bakery js"
   echo -e "14\t Theme twentytwentyfive"
   echo -e "15\t Theme xx"
-  echo -e "16\t "
+  echo -e "16\t Git Push"
   echo -e "17\t "
   echo -e "18\t "
   echo -e "0\t Exit"
@@ -107,6 +107,9 @@ until [ "$task" = "0" ]; do
 
   elif [ "$task" = "16" ]; then
     echo "...task ${task} "
+    git add .
+    git commit -m"update"
+    git push
 
   elif [ "$task" = "17" ]; then
     echo "...${task}"
