@@ -1,3 +1,5 @@
+<img src="wp_block_theme.svg" alt="wp_block_theme" width="120">
+
 # ![wp_block_theme](pages/public/img/icon_192x192.png)wp_block_theme
 A lightweight, responsive WordPress theme fully compatible with the Gutenberg block editor and Full Site Editing (FSE).
 
